@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Webmapping</title>
+    <link rel="stylesheet" href="mise_en_page_css.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+        <h1>Projet de mémoire SIG </h1>
+        <h2> Les mobilités alternatives au sein de Grand Besançon Métropole</h2>
+        <h3> M. ROBLET, L3 Géographie et Aménagement du territoire </h3>
+        <h4> UFR UMLP, Besançon, 2026</h4>
+        </div>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <ul>
+            <li class="menu1">
+                <h4><a href="#carte1">L'organisation spatiale des mobilités alternatives</a></h4>
+            </li>
+            <li class="menu1">
+                <h4><a href="#carte2">IAS</a></h4>
+            </li>
+             <li class="menu1">
+                <h4><a href="#carte3">Surface urbanisée desservie</a></h4>
+            </li>
+             <li class="menu1">
+                <h4><a href="#carte4">Comparaison IAS/IAF</a></h4>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h2> Comment s’organisent spatialement l’accès aux mobilités alternatives sur les 
+communes de Grand Besançon Métropole ? </h2>
+</section>
+
+<section class="bloc">
+    <h2>Contexte</h2>
+    <p> 10 ans après l'approbation de son PDU, Grand Besançon Métropole est marquée par un changement fort dans les modes de déplacement de ses habitants et, malgré son passé automobile, entame une transition des mobilités importante. Mais cette transition ne se traduit pas de manière homogène sur l'ensemble du territoire.</p>
+</section>
+
+<!-- ================= CARTE 1 ================= -->
+<section class="bloc carte" id="carte1">
+    <div class="text-carte">
+        
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>L'organsition spatiales des mobilités alternatives</h2>
+            <p> Cette carte permet, d'un coup d'oeil, de se faire une première idée de la répartition des mobilités alternatives dans le Grand Besançon Métropole. Les stations de Vélo en Libre Service, VLS, sont exclusivement localisées en Besançon, la ville centre, tout comme l'accès au tramway. Cependant, quand ces stations VLS disparaissent, le réseau de transport en commun semble prendre le relais afin de desservir le reste des communes, plus rurales et plus périphériques.
+            On peut d'ailleurs d'ores et déjà apercevoir une hiérarchisation du réseau de bus, notamment par les différentes typologies (ici représentée en un gradient de bleu), explicitant en réalité leur fréquence de desserte. 
+            A titre d'exemple, les bus de typologies 20 frôlent la fréquence du tramway, alors que ceux de typologies 70 correspondent aux lignes disponibles à la demande.</p>
+        </div>
+
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="qgis2web_carte1/index.html" class="mapframe"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 2 ================= -->
+<section class="bloc carte" id="carte2">
+    <div class="text-carte">
+        
+        <!-- Carte à gauche -->
+        <div class="carte-container">
+            <iframe src="qgis2web_carte2/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="texte">
+            <h2>Indice d'Accessibilité Spatiale</h2>
+            <p>L'IAS (Indice d'Accessibilité Spatiale) maximal par commune, comparé au nombre d'habitants par commune, a pour but d'expliquer si un fort IAS, donc une forte diversité de mobilités alternatives disponibles, peut être en lien avec le nombre d'habitant d'une commune. </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 3 ================= -->
+<section class="bloc carte" id="carte3">
+    <div class="text-carte">
+        
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>Surface urbanisée desservie par les mobilités alternatives</h2>
+            <p> Ici, en rapportant notre IAS à la surface urbanisée communale, notre appproche et notre analyse deviennent plus fines, et surtout plus justes.
+            Ainsi, nous pouvons voir que globalement, les communes dont la SU (Surface Urbanisée) est bien desservie par les mobilités alternatives,sont généralement aussi les communes avec un grand nombre d'habitants, cependant, cela est loin d'être automatique.
+            </p>
+        </div>
+
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="qgis2web_carte3/index.html" class="mapframe"></iframe>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CARTE 4 ================= -->
+<section class="bloc carte" id="carte4">
+    <div class="text-carte">
+        
+        <!-- Carte à gauche -->
+        <div class="carte-container">
+            <iframe src="qgis2web_carte4/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="texte">
+            <h2>Comparaison IAS/IAF</h2>
+            <p> L'analyse conjointe des deux indices permet de dépasser l'analyse purement spatiale de l'IAS, en y ajoutant la dimension qualitative de l'IAF (représenté ici de manière continue). 
+            Certaines communes apparaissent ainsi comme desservies dans une logique spatiale, sans 
+pour autant bénéficier d’une accessibilité effective, révélant une forme d’illusion d’accessibilité. 
+Ce décalage s’explique également par la hiérarchisation du réseau de transport, dans lequel 
+seules certaines lignes structurantes offrent un niveau de service élevé</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= Conclusion ================= -->
+<section class="bloc carte">
+    <h2> Conclusion </h2>
+  <p> Les résultats mettent en évidence une organisation fortement polarisée du territoire, structurée 
+autour de la ville de Besançon, qui concentre les niveaux d’accessibilité les plus élevés. Si 
+l’accessibilité spatiale suggère une couverture relativement étendue du territoire, l’analyse 
+fonctionnelle révèle une hiérarchisation plus marquée du réseau, traduisant des inégalités 
+importantes dans les niveaux de service proposés.</p>
+  <p> Ainsi, l’analyse conjointe de ces deux dimensions permet de proposer une lecture plus 
+nuancée de l’accessibilité aux mobilités alternatives, en soulignant le rôle déterminant de la 
+structure du réseau et des niveaux de service dans l’organisation des mobilités. Elle invite plus 
+largement à dépasser une approche fondée uniquement sur la proximité, au profit d’une 
+évaluation intégrant la diversité des conditions d’accès aux transports.</p>
+</section>
+
+<footer>
+    <p>© 2026 – ROBLET Morgane</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
